@@ -10,8 +10,12 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
-        
-    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <header class="main-header">
         <nav class ="navBar main-nav">
@@ -25,9 +29,6 @@
         <div>
         <button class="btn btn-header" type="button">Get Latest Albums </button>
         </div>
-        <div class="heart heart1">
-            <i  onclick="likeFunction(this)" class="fa fa-heart"></i>
-        </div>
         <button class="btn btn-play">&#9658</button>
     </header>
 <section class="container content-section">
@@ -38,7 +39,8 @@
         <img  class="shop-item-img" src="./images/download (1).jpg" alt="">
         <div class="shop-item-detail">
             <span class="shop-item-price">$10.99</span>
-        
+
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
 
             <button class= "btn btn-primary shop-item-button" type="button">Add To Cart</button>
         </div>
@@ -50,6 +52,7 @@
          <div class="shop-item-detail">
             <span class="shop-item-price">$12.99</span>
             
+        
             <button class= "btn btn-primary shop-item-button"  type="button">Add To Cart</button>
          </div>
     </div>
@@ -61,7 +64,7 @@
         <div class="shop-item-detail">
             <span class="shop-item-price">$13.99</span>
             
-     
+      
          <button class= "btn btn-primary shop-item-button" type="button">Add To Cart</button>
         </div>
     </div>
@@ -70,7 +73,7 @@
             <img class="shop-item-img" src=".\images\download (2).jpg" alt="">
         <div class="shop-item-detail">
             <span class="shop-item-price">$12.99</span>
-     
+    
             <button  class= "btn btn-primary shop-item-button" type="button">Add To Cart</button>
         </div> 
  </div>
@@ -150,5 +153,12 @@
 </section>
 
 <script src="./cart.js" async></script>
+
+<script async>
+    function myFunction(x) {
+            x.classList.toggle("click");
+        }
+        
+</script>
 </body>
 </html> 

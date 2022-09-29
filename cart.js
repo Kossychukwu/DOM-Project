@@ -26,11 +26,22 @@ function ready() {
   let purchase = document.getElementsByClassName("purchase-btn")[0];
 
   purchase.addEventListener("click", purchaseAlert);
-}
+
+  
+   
+
+  }
+
+
+ 
 
 function purchaseAlert() {
   return alert("Thank you for your purchase.");
 }
+
+// function likeFunction (x){
+// x.toogle("clicked")
+// }
 
 function removeCartItem(event) {
   var buttonClicked = event.target;

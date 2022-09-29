@@ -317,3 +317,21 @@ total-price {
   color: #222;
   font-size: 1.1em;
 }
+
+
+    
+.fa {
+    font-size: 5rem;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 20px;
+}
+
+.fa:hover {
+    color: none;
+}
+
+
+.click{
+    color: red;
+}
